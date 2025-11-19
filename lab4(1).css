@@ -1,0 +1,62 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    background-color: #004d80;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 2em;
+}
+
+/* Profile Box (Box Model Applied) */
+.profile-box {
+    width: 60%;              /* Centered fixed width */
+    margin: 30px auto;       /* Centering + space outside */
+    padding: 20px;           /* Space inside box */
+    border: 2px solid #aaa;  /* Border */
+    background-color: #f2f7ff; /* Light background */
+    text-align: center;
+    border-radius: 10px;     /* Optional rounded corners */
+}
+
+/* Student Image Styling */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;   /* Round image corners */
+    margin-bottom: 15px;
+}
+
+/* Text Styling */
+.profile-box h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.profile-box p {
+    font-size: 1em;
+    margin: 8px 0;
+}
+
+.bio {
+    font-size: 1.1em;
+    line-height: 1.4em;
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #eee;
+    margin-top: 20px;
+}

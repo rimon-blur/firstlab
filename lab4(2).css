@@ -1,0 +1,41 @@
+/* General Page Style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Common Section Box Model */
+.section {
+    padding: 25px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Section Colors */
+#about {
+    background-color: #ffe0e0; /* light red */
+}
+
+#education {
+    background-color: #e0ffe4; /* light green */
+}
+
+#hobbies {
+    background-color: #e0f0ff; /* light blue */
+}
+
+/* Custom Horizontal Rule */
+hr {
+    border: none;
+    height: 5px;
+    width: 80%;
+    background-color: #888;
+    margin: 30px auto;
+    border-radius: 5px;
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 10px;
+}

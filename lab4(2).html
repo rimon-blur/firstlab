@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Admission Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 6px;
+            max-width: 700px;
+            margin: auto;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 6px;
+        }
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        .inline {
+            width: auto;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 25px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 align="center">University Admission Form</h1>
+
+    <form>
+
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" maxlength="30" required>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" maxlength="30" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="birthdate">Date of Birth:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" class="inline" required>
+            <label for="male" class="inline">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female" class="inline">
+            <label for="female" class="inline">Female</label>
+
+            <input type="radio" id="other" name="gender" value="Other" class="inline">
+            <label for="other" class="inline">Other</label>
+        </fieldset>
+
+
+        <!-- Academic Information -->
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <label for="ssc">SSC Result (GPA):</label>
+            <input type="text" id="ssc" name="ssc" maxlength="4" required>
+
+            <label for="hsc">HSC Result (GPA):</label>
+            <input type="text" id="hsc" name="hsc" maxlength="4" required>
+
+            <label for="interests">Interests (Select Multiple):</label>
+            <input type="checkbox" id="math" name="interests" value="Mathematics" class="inline">
+            <label for="math" class="inline">Mathematics</label>
+
+            <input type="checkbox" id="science" name="interests" value="Science" class="inline">
+            <label for="science" class="inline">Science</label>
+
+            <input type="checkbox" id="sports" name="interests" value="Sports" class="inline">
+            <label for="sports" class="inline">Sports</label>
+
+            <input type="checkbox" id="art" name="interests" value="Art" class="inline">
+            <label for="art" class="inline">Art</label>
+
+            <label for="department">Preferred Department:</label>
+            <select id="department" name="department" required>
+                <option value="">-- Select Department --</option>
+                <option value="CSE">Computer Science & Engineering</option>
+                <option value="EEE">Electrical & Electronic Engineering</option>
+                <option value="BBA">Business Administration</option>
+                <option value="ENG">English</option>
+                <option value="LAW">Law</option>
+            </select>
+        </fieldset>
+
+
+        <!-- Document Upload -->
+        <fieldset>
+            <legend>Upload Required Documents</legend>
+
+            <label for="photo">Upload Photograph:</label>
+            <input type="file" id="photo" name="photo" required>
+
+            <label for="transcript">Upload Transcript / Certificates:</label>
+            <input type="file" id="transcript" name="transcript" required>
+        </fieldset>
+
+
+        <!-- Buttons -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+</html>
